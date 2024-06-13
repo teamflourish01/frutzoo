@@ -1,9 +1,15 @@
+.all-paddings{
+  padding: 0 20PX;
+}
+
+
 .mainicon-footer{
     text-align: center;
 }
 .location-time-phone{
-    
-    width: 780px;
+    max-width: 780px;
+    min-width: 200px;
+    width: 100%;
     /* border: 1px solid black; */
     margin: 15px auto 0 auto;
     
@@ -67,4 +73,67 @@ text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
+   }
+
+
+
+   @media screen and (max-width: 1024px){
+    .copyright-design-logo-flex{
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      justify-content: center;
+     }
+    
+    
+    /* Specific order for the boxes */
+    .box1 {
+      order: 2;
+    }
+    
+    .box2 {
+      order: 1; /* Move box2 to the top */
+    }
+    
+    .box3 {
+      order: 3;
+    }
+
+   }
+
+   @media screen and (max-width: 768px) {
+    .footer-flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      padding-top: 20px;
+      flex-direction: column;
+  }
+  .hrnone{
+    display:none;
+  }
+  .footer-flex p {
+    color: black;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+}
+.copyright-design-logo-flex p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+}
+.box1{
+  padding:20px 0 0 0
+}
+.box3{
+  padding:20px 0 0 0
+}
    }

@@ -15,9 +15,10 @@ const Footer = () => {
     <section style={{  paddingBottom:"100px" }}>
                 <div className="">
                     <div className="main-width">
-                        <div>
+                       
                             <div>
                                 <div className="under1320width">
+                                <div className="all-paddings">
                                     <div className='mainicon-footer'>
                                         <Image src={mainicon} width={207}/>
                                     </div>
@@ -36,13 +37,13 @@ const Footer = () => {
                                         </div>
                                         <div className='footer-flex'>
                                             <p>HOME</p>
-                                            <hr />
+                                            <hr className="hrnone"/>
                                             <p>ABOUT US</p>
-                                            <hr />
+                                            <hr className="hrnone" />
                                             <p>MENU</p>
-                                            <hr />
+                                            <hr  className="hrnone"/>
                                             <p>BLOG</p>
-                                            <hr />
+                                            <hr className="hrnone"/>
                                             <p>CONTACT US</p>
 
                                             
@@ -50,13 +51,13 @@ const Footer = () => {
 
                                     </div>
                                     <div className='copyright-design-logo-flex'>
-                                        <p>Copyrights © 2024 Frutzoo All rights reserved.</p>
-                                        <div className='nav-3-icon-flex'>
+                                        <p className='box1'>Copyrights © 2024 Frutzoo All rights reserved.</p>
+                                        <div className='nav-3-icon-flex box2'>
                                             <Image src={fb} width={50}/>
                                             <Image src={insta} width={50}/>
                                             <Image src={fb} width={50}/>
                                         </div>
-                                        <p>Design & Developed By: FLOURISH CREATIONS PVT.LTD. </p>
+                                        <p className='box3'>Design & Developed By: FLOURISH CREATIONS PVT.LTD. </p>
 
                                     </div>
                                 </div>
