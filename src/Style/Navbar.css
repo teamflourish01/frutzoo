@@ -3,7 +3,49 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  /* Light 300 */
+  font-family: Fonarto-Light;
+  src: url(../Fonarto/Fonarto-Light.otf);
+}
+@font-face {
+  /* Regular 400 */
+  font-family: Fonarto-Regular;
+  src: url(../Fonarto/Fonarto-Regular.otf);
+}
+@font-face {
+  /* Light 700 */
+  font-family: Fonarto-Bold;
+  src: url(../Fonarto/Fonarto-Bold.otf);
+}
 
+
+
+@font-face {
+  /* Light 300 */
+  font-family: Poppins-Light;
+  src: url(../poppins/Poppins-Light.ttf);
+}
+@font-face {
+  /* Regular 400 */
+  font-family: Poppins-Regular;
+  src: url(../poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  /* Light 500 */
+  font-family: Poppins-Medium;
+  src: url(../poppins/Poppins-Medium.ttf);
+}
+@font-face {
+  /* Light 600 */
+  font-family: Poppins-SemiBold;
+  src: url(../poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+  /* Light 700 */
+  font-family: Poppins-Bold;
+  src: url(../poppins/Poppins-Bold.ttf);
+}
 
 .search-bar {
   position: relative;
