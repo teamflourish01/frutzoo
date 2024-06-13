@@ -94,6 +94,8 @@
   width: 100%;
   padding: 14px 21px;
   border-radius: 5px;
+  background-color: white;
+  color: black;
 }
 .text-area .textarea{
   max-width: 744px;
@@ -102,6 +104,8 @@
   height: 168px;
   padding: 14px 21px;
   border-radius: 5px;
+  background-color: white;
+  color: black;
 }
 .contact-button {
   background-color: #ffa626;
