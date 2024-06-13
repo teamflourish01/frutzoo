@@ -1,5 +1,6 @@
 import React from "react";
 import "../../Style/contact.css";
+import "../../Style/HomeSection.css";
 import Image from "next/image";
 import footericon1 from "../../images/footericon1.webp";
 import footericon2 from "../../images/footericon2.webp";

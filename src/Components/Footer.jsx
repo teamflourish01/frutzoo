@@ -35,16 +35,16 @@ const Footer = () => {
                                             <Image src={footericon3} width={16}/>
                                             <p>+91 85110 24422</p>
                                         </div>
-                                        <div className='footer-flex'>
-                                            <p>HOME</p>
+                                        <div className='footer-flex1'>
+                                            <p className="footer-bolds">HOME</p>
                                             <hr className="hrnone"/>
-                                            <p>ABOUT US</p>
+                                            <p className="footer-bolds">ABOUT US</p>
                                             <hr className="hrnone" />
-                                            <p>MENU</p>
+                                            <p className="footer-bolds">MENU</p>
                                             <hr  className="hrnone"/>
-                                            <p>BLOG</p>
+                                            <p className="footer-bolds">BLOG</p>
                                             <hr className="hrnone"/>
-                                            <p>CONTACT US</p>
+                                            <p className="footer-bolds">CONTACT US</p>
 
                                             
                                         </div>
