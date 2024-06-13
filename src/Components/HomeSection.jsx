@@ -4,6 +4,7 @@ import "../style/HomeSection.css";
 import Image from "next/image";
 import leftleaf from "../images/leftleaf.webp"
 import bannerfullorange from "../images/bannerfullorange.webp";
+import doubleshapeborderbanner from "../images/doubleshapeborderbanner.png";
 import doubledot from "../images/doubledot.webp";
 import bannerfruitzoom from "../images/bannerfruitzoom.webp";
 import bannerhalforange from "../images/bannerhalforange.webp";
@@ -29,6 +30,14 @@ import circle3 from "../images/circle3.png";
 import circle4 from "../images/circle4.png";
 import circle5 from "../images/circle5.png";
 import circle6 from "../images/circle6.png";
+import tabletlakdi from "../images/tabletlakdi.webp";
+import tableticon1 from "../images/tableticon1.webp";
+import tableticon2 from "../images/tableticon2.webp";
+import tableticon3 from "../images/tableticon3.webp";
+import tableticon4 from "../images/tableticon4.webp";
+import tableticon5 from "../images/tableticon5.webp";
+import tableticon6 from "../images/tableticon6.webp";
+
 // const Marquee = ({
 //     texts,
 //     separator,
@@ -125,7 +134,7 @@ const Testimonials = ({ testimonials }) => {
                 ))}
             </div>
         </div>
-        
+
     );
 };
 
@@ -203,13 +212,12 @@ const HomeSection = () => {
             <section style={{ overflow: "hidden" }}>
                 <div className="wavebgbanner">
                     <div className="main-width">
-                        <div >
-                            
-                            <div style={{ marginTop: "70px" }}>
-                            <div className="leftleaf-container" style={{position:"absolute"}}>
-                                <Image src={leftleaf}/>
+                        <div style={{ marginTop: "70px" }}>
+                            <div className="leftleaf-container" style={{ position: "absolute" }}>
+                                <Image src={leftleaf} />
                             </div>
-                                <div className="under1320width">
+                            <div className="under1320width">
+                                <div className="all-paddings">
                                     <div>
                                         <div className="frutzoo-flex">
                                             <div className="every-sip">
@@ -237,20 +245,23 @@ const HomeSection = () => {
                                             </div>
                                             <div className="big-bg">
                                                 <div className="small-bg">
+
+                                                    <Image
+                                                        className="fruitzoom1"
+                                                        src={doubleshapeborderbanner}
+                                                        alt="Doubleshape Border Banner"
+                                                    />
                                                     <Image
                                                         className="fruitzoom"
                                                         src={bannerfruitzoom}
-                                                        alt="Logo"
-                                                        width={357}
-                                                        height={336}
+                                                        alt="Banner Fruit Zoom"
                                                     />
+
                                                 </div>
-                                                
-                                                
                                             </div>
                                         </div>
                                         <div className="cut-orange-and-dot">
-                                            <Image  src={bannerhalforange} width={127} />
+                                            <Image src={bannerhalforange} width={127} />
                                             <Image
                                                 className=""
                                                 src={doubledot}
@@ -265,57 +276,45 @@ const HomeSection = () => {
                         </div>
                     </div>
 
-                    {/* <Marquee
-                        texts={[
-                            "Be Healthier",
-                            "Be Healthier",
-                            "Be Healthier",
-                            "Be Healthier",
-                            "Be Healthier",
-                            "Be Healthier",
-                        ]}
-                        direction="left"
-                        behavior="scroll"
-                        scrollamount="5"
-                    /> */}
-                    <div class="carousel-wrapper">
-  <div class="carousel">
-    <div class="item">Be Healthier</div>
-    <div class="item"><Image src={bannerfullorange} width={30} height={30}/></div>
-    <div class="item stroke">Be Healthier</div>
-    <div class="item"><Image src={bannerfullorange} width={30} height={30}/></div>
-    <div class="item">Be Healthier</div>
-    <div class="item"><Image src={bannerfullorange} width={30} height={30}/></div>
-    <div class="item stroke">Be Healthier</div>
-    <div class="item"><Image src={bannerfullorange} width={30} height={30}/></div>
-    <div class="item">Be Healthier</div>
-    <div class="item"><Image src={bannerfullorange} width={30} height={30}/></div>
-    <div class="item stroke">Be Healthier</div>
-    <div class="item"><Image src={bannerfullorange} width={30} height={30}/></div>
-    <div class="item">Be Healthier</div>
-    <div class="item"><Image src={bannerfullorange} width={30} height={30}/></div>
-    <div class="item stroke">Be Healthier</div>
-    <div class="item"><Image src={bannerfullorange} width={30} height={30}/></div>
-    <div class="item">Be Healthier</div>
-    <div class="item"><Image src={bannerfullorange} width={30} height={30}/></div>
-    <div class="item stroke">Be Healthier</div>
-    <div class="item"><Image src={bannerfullorange} width={30} height={30}/></div>
-    <div class="item">Be Healthier</div>
-    <div class="item"><Image src={bannerfullorange} width={30} height={30}/></div>
-    <div class="item stroke">Be Healthier</div>
-    <div class="item"><Image src={bannerfullorange} width={30} height={30}/></div>
-    <div class="item">Be Healthier</div>
-    <div class="item"><Image src={bannerfullorange} width={30} height={30}/></div>
-    <div class="item stroke">Be Healthier</div>
-    <div class="item"><Image src={bannerfullorange} width={30} height={30}/></div>
-    <div class="item">Be Healthier</div>
-    <div class="item"><Image src={bannerfullorange} width={30} height={30}/></div>
-    <div class="item stroke">Be Healthier</div>
-    <div class="item"><Image src={bannerfullorange} width={30} height={30}/></div>
 
-    
-  </div>
-</div>
+                    <div class="carousel-wrapper">
+                        <div class="carousel">
+                            <div class="item">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item stroke">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item stroke">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item stroke">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item stroke">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item stroke">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item stroke">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item stroke">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item stroke">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+
+
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -323,8 +322,8 @@ const HomeSection = () => {
                 <div className="">
                     <div className="main-width">
                         <div>
-                            <div>
-                                <div className="under1320width">
+                            <div className="under1320width">
+                                <div >
                                     <div className="our-offering">
                                         <p>Discover Us</p>
                                         <div className="our-offering-img">
@@ -336,12 +335,12 @@ const HomeSection = () => {
                                         </div>
                                     </div>
                                     <div class="timeline-container">
-                                        <div class="flex flex-col md-flex-row items-center justify-center" style={{ justifyContent: "end", width: "1266px", marginLeft: "54px" }} >
+                                        <div class="flex flex-col md-flex-row items-center justify-center timeline-under-width1"  >
                                             <div class="flex flex-col items-center mx-4">
                                                 <Image src={timelineico1} alt="Orchard" class="mb-2" />
                                             </div>
                                             <div class="flex flex-col items-center mx-4">
-                                                <div class="text-center" style={{ width: "206px", margin: "0 69px 0 81.33px" }}>
+                                                <div class="text-center" >
                                                     <h3 class="font-bold">Harvesting</h3>
                                                     <p>Handpicked with hygiene for unmatchable flavour.</p>
                                                 </div>
@@ -350,7 +349,7 @@ const HomeSection = () => {
                                                 <Image src={timelineico2} alt="Transporting" class="mb-2" />
                                             </div>
                                             <div class="flex flex-col items-center mx-4">
-                                                <div class="text-center" style={{ width: "200px", margin: "0 92px 0 69.3px" }}>
+                                                <div class="text-center" >
                                                     <h3 class="font-bold">Quality Check</h3>
                                                     <p>Only the best ingredients make it to your day.</p>
                                                 </div>
@@ -359,7 +358,7 @@ const HomeSection = () => {
                                                 <Image src={timelineico3} alt="Making" class="mb-2" />
                                             </div>
                                             <div class="flex flex-col items-center mx-4">
-                                                <div class="text-center" style={{ width: "184px", margin: "0 0 0 92.26px" }}>
+                                                <div class="text-center" >
                                                     <h3 class="font-bold">Serving Healthier</h3>
                                                     <p>Indulge in the healthier flavours of frutzo.</p>
                                                 </div>
@@ -376,33 +375,104 @@ const HomeSection = () => {
                                                 <Image class="circle" src={circle6} />
                                             </div>
                                         </div>
-                                        <div class="flex flex-col md-flex-row items-center justify-center" style={{ justifyContent: "left", width: "1275px", marginRight: "44.28px" }}>
+                                        <div class="flex flex-col md-flex-row items-center justify-center timeline-under-width2" >
                                             <div class="flex flex-col items-center mx-4">
-                                                <div class="text-center" style={{ width: "201px" }}>
+                                                <div class="text-center">
                                                     <h3 class="font-bold">Orchard</h3>
                                                     <p>Where it all begins. Freshness grown under the sun.</p>
                                                 </div>
                                             </div>
                                             <div class="flex flex-col items-center mx-4" >
-                                                <Image src={timelineico4} alt="Harvesting" class="mb-2" style={{ margin: "0 83.3px 0 84px" }} />
+                                                <Image src={timelineico4} alt="Harvesting" class="mb-2"  />
                                             </div>
                                             <div class="flex flex-col items-center mx-4">
-                                                <div class="text-center" style={{ width: "177px" }}>
+                                                <div class="text-center" >
                                                     <h3 class="font-bold">Transporting</h3>
                                                     <p>Swift and safe journey to preserve quality.</p>
                                                 </div>
                                             </div>
                                             <div class="flex flex-col items-center mx-4">
-                                                <Image src={timelineico5} alt="Quality Check" class="mb-2" style={{ margin: "0 80.26px 0 81px" }} />
+                                                <Image src={timelineico5} alt="Quality Check" class="mb-2"  />
                                             </div>
                                             <div class="flex flex-col items-center mx-4">
-                                                <div class="text-center" style={{ width: "223px" }}>
+                                                <div class="text-center" >
                                                     <h3 class="font-bold">Making</h3>
                                                     <p>Freshly prepared to capture the essence of originality.</p>
                                                 </div>
                                             </div>
                                             <div class="flex flex-col items-center mx-4">
-                                                <Image src={timelineico6} alt="Serving Healthier" class="mb-2" style={{ margin: "0 0 0 74px" }} />
+                                                <Image src={timelineico6} alt="Serving Healthier" class="mb-2"  />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="tablet-timeline-container">
+                                        <div class="tablet-content-flex" >
+                                            <div class="tablet-width-seperate">
+                                                <div class="text-center">
+                                                    <h3 class="font-bold">Orchard</h3>
+                                                    <p>Where it all begins. Freshness grown under the sun.</p>
+                                                </div>
+                                            </div>
+                                            <div class="tablet-width-seperate" >
+                                                <Image src={timelineico4} alt="Harvesting" class=""  />
+                                            </div>
+                                            <div class="tablet-width-seperate">
+                                                <div class="text-center" >
+                                                    <h3 class="font-bold">Transporting</h3>
+                                                    <p>Swift and safe journey to preserve quality.</p>
+                                                </div>
+                                            </div>
+                                            <div class="tablet-width-seperate">
+                                                <Image src={timelineico5} alt="Quality Check" class=""  />
+                                            </div>
+                                            <div class="tablet-width-seperate">
+                                                <div class="text-center" >
+                                                    <h3 class="font-bold">Making</h3>
+                                                    <p>Freshly prepared to capture the essence of originality.</p>
+                                                </div>
+                                            </div>
+                                            <div class="tablet-width-seperate">
+                                                <Image src={timelineico6} alt="Serving Healthier" class=""  />
+                                            </div>
+                                        </div>
+                                        <div class=" tablet-lakdi-container " >
+                                            <Image src={tabletlakdi} alt="Timeline" class="tablet-full" />
+                                            <div class=" tablet-circle-container   ">
+                                                <Image class="tablet-circle" src={tableticon1}/>
+                                                <Image class="tablet-circle" src={tableticon2}/>
+                                                <Image class="tablet-circle" src={tableticon3}/>
+                                                <Image class="tablet-circle" src={tableticon4}/>
+                                                <Image class="tablet-circle" src={tableticon5}/>
+                                                <Image class="tablet-circle" src={tableticon6}/>
+                                            </div>
+                                        </div>
+                                        <div class="tablet-content-flex"  >
+                                            <div class="tablet-width-seperate">
+                                                <Image src={timelineico1} alt="Orchard" class="" />
+                                            </div>
+                                            <div class="tablet-width-seperate">
+                                                <div class="text-center" >
+                                                    <h3 class="font-bold">Harvesting</h3>
+                                                    <p>Handpicked with hygiene for unmatchable flavour.</p>
+                                                </div>
+                                            </div>
+                                            <div class="tablet-width-seperate">
+                                                <Image src={timelineico2} alt="Transporting" class="" />
+                                            </div>
+                                            <div class="tablet-width-seperate">
+                                                <div class="text-center" >
+                                                    <h3 class="font-bold">Quality Check</h3>
+                                                    <p>Only the best ingredients make it to your day.</p>
+                                                </div>
+                                            </div>
+                                            <div class="tablet-width-seperate">
+                                                <Image src={timelineico3} alt="Making" class="" />
+                                            </div>
+                                            <div class="tablet-width-seperate">
+                                                <div class="text-center" >
+                                                    <h3 class="font-bold">Serving Healthier</h3>
+                                                    <p>Indulge in the healthier flavours of frutzo.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -416,9 +486,9 @@ const HomeSection = () => {
             <section style={{ paddingTop: "100px" }}>
                 <div className="">
                     <div className="main-width ">
-                        <div >
-                            <div>
-                                <div className="under1320width">
+                        <div>
+                            <div className="under1320width">
+                                <div className="all-paddings">
                                     <div className="our-offering">
                                         <p>Our Offerings</p>
                                         <div className="our-offering-img">
@@ -481,12 +551,12 @@ const HomeSection = () => {
                 </div>
             </section>
 
-            <section className=" our-back" style={{ paddingTop: "100px" }}>
+            <section className="our-back " style={{ paddingTop: "100px" }}>
                 <div className="">
                     <div className="main-width">
-                        <div >
-                            <div>
-                                <div className="under1320width">
+                        <div>
+                            <div className="under1320width">
+                                <div className="all-paddings">
                                     <div className="our-offering">
                                         <p>Trust Factor</p>
                                         <div className="our-offering-img">
@@ -529,17 +599,19 @@ const HomeSection = () => {
                         <div className="shapeleft">
                             <div className="shaperight">
                                 <div className="under1320width">
-                                    <div className="our-offering">
-                                        <p>Testimonials</p>
-                                        <div className="our-offering-img">
-                                            <Image
-                                                className="our-offering-icon"
-                                                src={underheading}
-                                                alt=""
-                                            />
+                                    <div className="all-paddings">
+                                        <div className="our-offering">
+                                            <p>Testimonials</p>
+                                            <div className="our-offering-img">
+                                                <Image
+                                                    className="our-offering-icon"
+                                                    src={underheading}
+                                                    alt=""
+                                                />
+                                            </div>
                                         </div>
+                                        <Testimonials testimonials={testimonials} />
                                     </div>
-                                    <Testimonials testimonials={testimonials} />
                                 </div>
                             </div>
                         </div>
@@ -550,9 +622,9 @@ const HomeSection = () => {
             <section style={{ paddingTop: "100px" }}>
                 <div className="">
                     <div className="main-width">
-                        <div>
                             <div>
                                 <div className="under1320width">
+                                <div className="all-paddings">
                                     <div className="our-offering">
                                         <p>FAQ’s</p>
                                         <div className="our-offering-img">
@@ -594,11 +666,11 @@ const HomeSection = () => {
             </section>
 
             <section className="locationbackground" style={{ paddingTop: "100px" }}>
-                <div className="locationbackground1">
-                    <div className="main-width">
-                        <div >
-                            <div>
+                <div >
+                    <div className="locationbackground1">
+                        <div className="main-width">
                                 <div className="under1320width">
+                                <div className="all-paddings">
                                     <div className="our-offering">
                                         <p>Location</p>
                                         <div className="our-offering-img">
@@ -619,8 +691,6 @@ const HomeSection = () => {
                                     <div className="iframe-map">
                                         <iframe
                                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.826065976569!2d72.52442987477045!3d23.030157716046155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e850d4b774dbf%3A0x154530a04eb783f8!2sFrutzoo!5e0!3m2!1sen!2sin!4v1717759746767!5m2!1sen!2sin"
-                                            width="1320"
-                                            height="564"
                                             style={{ border: "0", borderRadius: "15px" }}
                                             allowfullscreen=""
                                             loading="lazy"

@@ -247,6 +247,17 @@ max-width: 1320px;
   }
   
   @media screen and (max-width: 1315px) {
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: white;
+      /* padding: 21px 0px; */
+      height: 100px;
+      /* border: 1px solid black; */
+      gap: 70px;
+      /* border: 1px solid black; */
+  }
     .navs-main-icon{
       display: unset;
       }
@@ -345,6 +356,27 @@ max-width: 1320px;
       cursor: pointer;
       color: black;
     }
+    .leaf-container {
+      position: relative;
+      display: none;
+     
+      
+  }
+  
+  .leaf {
+      position: absolute;
+      transform: translateY(-50%);
+      animation: moveLeaf 5s ease-in-out infinite;
+      display: none;
+  }
+  .rightleaf-container{
+    position: relative;
+    right: 0;
+    top: 0; 
+    animation: moveUpAndDown 5s ease-in-out infinite;
+    display: none;
+  }
+  
   }
   /* .stme {
     border-radius: 10px;
@@ -597,4 +629,10 @@ max-width: 1320px;
   75% {
     transform: translateX(5px) rotate(3deg);
   }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  
 }

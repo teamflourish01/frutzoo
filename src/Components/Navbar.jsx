@@ -15,10 +15,10 @@ const Navbar = () => {
         setClicked(!clicked);
     };
 
-    return (
+    return ( 
         <nav className="sticky-top nav2 no-copy-text">
             <div className="under1320width">
-                <div className="all-page-padding">
+                <div >
                     <div className="nav">
                         <Link href="/">
                             <Image className="desi-logo" src={mainicon} alt="Logo" width={240}  />
