@@ -222,8 +222,8 @@ max-width: 1320px;
     z-index: 1;
   }
   .desi-logo {
-    width: 241px;
-    height: 82px;
+    width: 240px;
+    
   }
   .under {
     color: black;
@@ -294,7 +294,7 @@ max-width: 1320px;
       align-items: center;
       justify-content: space-between;
       background: white;
-      /* padding: 21px 0px; */
+      padding: 0 20px;
       height: 100px;
       /* border: 1px solid black; */
       gap: 70px;
@@ -475,7 +475,8 @@ max-width: 1320px;
       align-items: center;
       justify-content: space-between;
       background: white;
-      padding: 0px ;
+      padding: 0 20px ;
+      gap: 20px;
       /* border: 1px solid black; */
   }
   .under-nav-flex {
@@ -514,7 +515,8 @@ max-width: 1320px;
       transition: 0.3s ease-in-out;
   }
     .desi-logo {
-      width: 120px;
+      width: 140px;
+      height:55.55px
     }
   }
   
