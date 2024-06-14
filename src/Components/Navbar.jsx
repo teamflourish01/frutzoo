@@ -21,7 +21,7 @@ const Navbar = () => {
                 <div >
                     <div className="nav">
                         <Link href="/">
-                            <Image className="desi-logo" src={mainicon} alt="Logo" width={240}  />
+                            <Image className="desi-logo" src={mainicon} alt="Logo"   />
                         </Link>
                         <div>
                             <ul

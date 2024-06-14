@@ -1218,4 +1218,21 @@ line-height: 15px;
 text-align: center;
 
 }
+.every-sip {
+  max-width: 652px;
+  min-width: 200px;
+  width: 100%;
+  height: unset;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+.banner-heading {
+  max-width: 652px;
+  min-width: 200px;
+  width: 100%;
+  height: unset;
+  /* border: 1px solid black; */
+}
   }
