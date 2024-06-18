@@ -274,6 +274,17 @@ line-height: 60px;
 .mb-2 {
   margin-bottom: 0.5rem;
   width: 90px;
+  animation: upAndDown 2s infinite;
+}
+
+
+@keyframes upAndDown {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px); /* Adjust the value as needed */
+  }
 }
 
 /* Text utility classes */
@@ -339,7 +350,9 @@ text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+ 
 }
+
 
 /* Additional utility class for spacing between circles */
 .justify-between {
@@ -1202,9 +1215,11 @@ text-align: center;
 }
 .text-center p{
   font-family: Poppins-Regular;
-font-size: 8px;
+/* font-size: 8px; */
+font-size: calc(8px + 2vw);
+
 font-weight: 400;
-line-height: 10.02px;
+line-height: unset;
 text-align: center;
 
 }
@@ -1212,9 +1227,11 @@ text-align: center;
 .font-bold {
  
   font-family: Poppins-Bold;
-font-size: 10px;
+/* font-size: 10px; */
+font-size: calc(10px + 2vw);
+
 font-weight: 700;
-line-height: 15px;
+line-height: unset;
 text-align: center;
 
 }

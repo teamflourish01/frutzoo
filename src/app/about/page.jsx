@@ -3,28 +3,141 @@ import "../../style/HomeSection.css";
 import "../../Style/About.css";
 import Image from "next/image";
 import leftleaf from "../../images/leftleaf.webp";
-import bannerfullorange from "../../images/bannerfullorange.webp";
-import doubledot from "../../images/doubledot.webp";
-import bannerfruitzoom from "../../images/bannerfruitzoom.webp";
-import bannerhalforange from "../../images/bannerhalforange.webp";
+
 import aboutanimal from "../../images/aboutanimal.webp";
 import aboutsection from "../../images/aboutsection.png";
 import aboutbg from "../../images/aboutbg.png";
 import values from "../../images/values.png";
 import innovation from "../../images/innovation.png";
 import community from "../../images/community.png";
+import bannerfullorange from "../../images/bannerfullorange.webp";
+import doubleshapeborderbanner from "../../images/doubleshapeborderbanner.png";
+import doubledot from "../../images/doubledot.webp";
+import aboutfruitbanner from "../../images/aboutfruitbanner.png";
+import bannerhalforange from "../../images/bannerhalforange.webp";
+import underheading from "../../images/underheading.webp";
 
 // import underheading from "../images/underheading.webp";
 const page = () => {
   return (
     <>
-      <section style={{ overflow: "hidden" }}>
+    <section style={{ overflow: "hidden" }}>
+                <div className="wavebgbanner">
+                    <div className="main-width">
+                        <div style={{ marginTop: "170px" }}>
+                            <div className="leftleaf-container" style={{ position: "absolute", left:"-5px" }}>
+                                <Image src={leftleaf} />
+                            </div>
+                            <div className="under1320width">
+                                <div className="all-paddings">
+                                    <div>
+                                        <div className="frutzoo-flex">
+                                            <div className="every-sip">
+                                                <div className="orange-dot">
+                                                    <div className="orange-dot-flex">
+                                                        <Image
+                                                            className="rotate-img"
+                                                            src={bannerfullorange}
+                                                            alt="Logo"
+                                                            width={126}
+                                                            height={126}
+                                                        />
+                                                        <Image
+                                                            className=""
+                                                            src={doubledot}
+                                                            alt="Logo"
+                                                            width={26}
+                                                            height={26}
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div className="banner-heading">
+                                                    <p>About Us</p>
+                                                </div>
+                                            </div>
+                                            <div className="big-bg">
+                                                <div className="small-bg">
+
+                                                    <Image
+                                                        className="fruitzoom1"
+                                                        src={doubleshapeborderbanner}
+                                                        alt="Doubleshape Border Banner"
+                                                    />
+                                                    <Image
+                                                       style={{height:"auto"}}
+                                                        className="fruitzoom"
+                                                        src={aboutfruitbanner}
+                                                        alt="Banner Fruit Zoom"
+                                                    />
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="cut-orange-and-dot">
+                                            <Image src={bannerhalforange} width={127} />
+                                            <Image
+                                                className=""
+                                                src={doubledot}
+                                                alt="Logo"
+                                                width={26}
+                                                height={26}
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-wrapper">
+                        <div class="carousel">
+                            <div class="item">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item stroke">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item stroke">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item stroke">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item stroke">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item stroke">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item stroke">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item stroke">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+                            <div class="item stroke">Be Healthier</div>
+                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+      <section style={{ overflow: "hidden", paddingTop: "100px"  }}>
         <div className="wavebgbanner">
           <div className="main-width">
            
               <div>
                 <div className="under1320width">
                 <div className="all-padding">
+                  
                   <div className="nature-flex">
                     <div className="delicious">
                       <p className="delicious-p">
@@ -70,7 +183,7 @@ const page = () => {
         </div>
       </section>
 
-      <section style={{ overflow: "hidden" }}>
+      <section style={{ overflow: "hidden" ,paddingTop: "100px" }}>
         <div className="wavebgbanner">
           <div className="main-width">
               <div>
@@ -126,12 +239,22 @@ const page = () => {
         </div>
       </section>
 
-      <section style={{ overflow: "hidden" }}>
+      <section style={{ overflow: "hidden",paddingTop: "100px" }}>
         <div className="wavebgbanner">
           <div className="main-width">
               <div>
                 <div className="under1320width">
           <div className="all-padding">
+          <div className="our-offering">
+                                        <p>Our Values</p>
+                                        <div className="our-offering-img">
+                                            <Image
+                                                className="our-offering-icon"
+                                                src={underheading}
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
                   <div className="Our-Values">
                     <div className="our-flex">
                       <div className="valuees">
@@ -166,7 +289,7 @@ const page = () => {
                       <Image src={innovation} className="innovation-img" />
                     </div>
                   </div>
-                  <div className="community-padding">
+                 
                     <div className="Community-flex">
                       <div className="community-img">
                         <Image src={community}  className="comm-img"/>
@@ -182,9 +305,7 @@ const page = () => {
                         </p>
                       </div>
                     </div>
-                  </div>
-
-                  <div></div>
+                 
                 </div>
               </div>
             </div>
