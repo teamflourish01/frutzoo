@@ -1,6 +1,7 @@
 "use client"
 
 import React,{useState} from "react";
+import axios from "axios";
 import "../../Style/contact.css";
 import "../../Style/HomeSection.css";
 import Image from "next/image";
@@ -35,7 +36,7 @@ const page = () => {
 
   const validateForm = () => {
     const { name, Phone, email, subject, message } = formdata;
-    if (!name || !Phone || !email || !subject || !message) {
+    if (!name || !phone || !email || !subject || !message) {
       // toast.error("Please fill out all fields.");
       alert("invalid fields")
       return false;
@@ -44,7 +45,8 @@ const page = () => {
     return true;
   };
 
-  const submitForm = () => {
+  const submitForm = (e) => {
+    e.preventDefault()
     // if (validateForm()) {
       
       axios
@@ -53,7 +55,7 @@ const page = () => {
           console.log(response.data);
           setformdata({
             name: "",
-            Phone: "",
+            phone: "",
             email: "",
             subject: "",
             message: "",

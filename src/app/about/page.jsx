@@ -16,6 +16,7 @@ import doubledot from "../../images/doubledot.webp";
 import aboutfruitbanner from "../../images/aboutfruitbanner.png";
 import bannerhalforange from "../../images/bannerhalforange.webp";
 import underheading from "../../images/underheading.webp";
+import value from "../../images/value.png"
 
 // import underheading from "../images/underheading.webp";
 const page = () => {
@@ -184,6 +185,7 @@ const page = () => {
             </div>
           </div>
         </div>
+        </div>
       </section>
 
       <section style={{ overflow: "hidden" ,paddingTop: "100px" }}>
@@ -295,7 +297,7 @@ const page = () => {
                  
                     <div className="Community-flex">
                       <div className="community-img">
-                        <Image src={community}  className="comm-img"/>
+                        <Image src={value}  className="comm-img"/>
                       </div>
                       <div className="community-contain">
                         <p className="believe">Community</p>

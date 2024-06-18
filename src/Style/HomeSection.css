@@ -127,7 +127,9 @@ text-align: left;
   align-items: center;
 }
 
-
+.item{
+  color: white;
+}
 
 .fruitzoom1, .fruitzoom {
   position: absolute;
@@ -996,7 +998,7 @@ text-align: center;
     flex: 1 0 var(--width);
     text-align: center;
     /* padding: 1rem; */
-    /* color: black; */
+    color: white;
     font-family: Poppins-SemiBold;
     font-size: 25px;
     font-weight: 600;
