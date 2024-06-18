@@ -136,8 +136,11 @@ const page = () => {
            
               <div>
                 <div className="under1320width">
+
+                <div className="all-paddings">
+
                 <div className="all-padding">
-                  
+
                   <div className="nature-flex">
                     <div className="delicious">
                       <p className="delicious-p">

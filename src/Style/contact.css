@@ -1,10 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  
 }
-
-
 
 .contact-container {
   background-color: white;
@@ -39,7 +36,8 @@
   margin: 0 auto;
 }
 .contact-info {
-  font-family: Poppins;
+  /* Light 600 */
+  font-family: Poppins-SemiBold;
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
@@ -97,7 +95,7 @@
   background-color: white;
   color: black;
 }
-.text-area .textarea{
+.text-area .textarea {
   max-width: 744px;
   min-width: 200px;
   width: 100%;
@@ -116,7 +114,9 @@
   color: white;
   border: none;
   border-radius: 28px;
-  font-family: Poppins;
+  cursor: pointer;
+ 
+font-family: Poppins-Bold;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -130,7 +130,8 @@
 }
 .color {
   color: black;
-  font-family: Poppins;
+ 
+font-family: Poppins-Regular;
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
@@ -202,21 +203,23 @@
   .button-container {
     padding: 34px 0 20px 0;
   }
-  .text-area{
+  .text-area {
     padding: 0 4px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .contact-info {
-    font-family: Poppins;
+    /* Light 600 */
+ font-family: Poppins-SemiBold;
     font-size: 18px;
     font-weight: 600;
     line-height: 27px;
     text-align: center;
   }
   .contact-info-para {
-    font-family: Poppins;
+   /* Regular 400 */
+font-family: Poppins-Regular;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -226,7 +229,8 @@
     margin: 10px 4px 15px 4px;
   }
   .color {
-    font-family: Poppins;
+    /* Regular 400 */
+font-family: Poppins-Regular;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -236,22 +240,20 @@
     padding: 15px 0;
   }
   .contact-no {
-
     padding: 15px 0 0 0;
-}
-.contact-info {
- 
-  padding: 15px 0;
-}
-/* .input-box {
+  }
+  .contact-info {
+    padding: 15px 0;
+  }
+  /* .input-box {
   max-width: 272px;
   min-width: 100px;
   width: 100%;
 } */
-.contact-flex{
-  gap: 0px;
-}
-.button-padding{
-  padding: 0 4px;
-}
+  .contact-flex {
+    gap: 0px;
+  }
+  .button-padding {
+    padding: 0 4px;
+  }
 }
