@@ -6,7 +6,7 @@ import leftleaf from "../images/leftleaf.webp"
 import bannerfullorange from "../images/bannerfullorange.webp";
 import doubleshapeborderbanner from "../images/doubleshapeborderbanner.png";
 import doubledot from "../images/doubledot.webp";
-import bannerfruitzoom from "../images/bannerfruitzoom.webp";
+import bannerfruitzoom from "../images/bannerfruitzoom.png";
 import bannerhalforange from "../images/bannerhalforange.webp";
 import underheading from "../images/underheading.webp";
 import ourofferingsicon1 from "../images/ourofferingsicon1.webp";
@@ -212,8 +212,8 @@ const HomeSection = () => {
             <section style={{ overflow: "hidden" }}>
                 <div className="wavebgbanner">
                     <div className="main-width">
-                        <div style={{ marginTop: "70px" }}>
-                            <div className="leftleaf-container" style={{ position: "absolute" }}>
+                        <div style={{ marginTop: "170px" }}>
+                            <div className="leftleaf-container" style={{ position: "absolute", left:"-5px" }}>
                                 <Image src={leftleaf} />
                             </div>
                             <div className="under1320width">
@@ -323,7 +323,7 @@ const HomeSection = () => {
                     <div className="main-width">
                         <div>
                             <div className="under1320width">
-                                <div >
+                                <div className="all-paddings">
                                     <div className="our-offering">
                                         <p>Discover Us</p>
                                         <div className="our-offering-img">
@@ -414,7 +414,7 @@ const HomeSection = () => {
                                                 </div>
                                             </div>
                                             <div class="tablet-width-seperate" >
-                                                <Image src={timelineico4} alt="Harvesting" class=""  />
+                                                <Image src={timelineico4} alt="Harvesting" class="mb-2"  />
                                             </div>
                                             <div class="tablet-width-seperate">
                                                 <div class="text-center" >
@@ -423,7 +423,7 @@ const HomeSection = () => {
                                                 </div>
                                             </div>
                                             <div class="tablet-width-seperate">
-                                                <Image src={timelineico5} alt="Quality Check" class=""  />
+                                                <Image src={timelineico5} alt="Quality Check" class="mb-2"  />
                                             </div>
                                             <div class="tablet-width-seperate">
                                                 <div class="text-center" >
@@ -432,7 +432,7 @@ const HomeSection = () => {
                                                 </div>
                                             </div>
                                             <div class="tablet-width-seperate">
-                                                <Image src={timelineico6} alt="Serving Healthier" class=""  />
+                                                <Image src={timelineico6} alt="Serving Healthier" class="mb-2"  />
                                             </div>
                                         </div>
                                         <div class=" tablet-lakdi-container " >
@@ -448,7 +448,7 @@ const HomeSection = () => {
                                         </div>
                                         <div class="tablet-content-flex"  >
                                             <div class="tablet-width-seperate">
-                                                <Image src={timelineico1} alt="Orchard" class="" />
+                                                <Image src={timelineico1} alt="Orchard" class="mb-2" />
                                             </div>
                                             <div class="tablet-width-seperate">
                                                 <div class="text-center" >
@@ -457,7 +457,7 @@ const HomeSection = () => {
                                                 </div>
                                             </div>
                                             <div class="tablet-width-seperate">
-                                                <Image src={timelineico2} alt="Transporting" class="" />
+                                                <Image src={timelineico2} alt="Transporting" class="mb-2" />
                                             </div>
                                             <div class="tablet-width-seperate">
                                                 <div class="text-center" >
@@ -466,7 +466,7 @@ const HomeSection = () => {
                                                 </div>
                                             </div>
                                             <div class="tablet-width-seperate">
-                                                <Image src={timelineico3} alt="Making" class="" />
+                                                <Image src={timelineico3} alt="Making" class="mb-2" />
                                             </div>
                                             <div class="tablet-width-seperate">
                                                 <div class="text-center" >

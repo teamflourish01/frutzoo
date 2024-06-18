@@ -38,6 +38,10 @@ font-weight: 400;
 line-height: 30px;
 text-align: center;
   }
+
+  .footer-flex1 p:hover{
+    color: rgba(255, 166, 38, 1);
+  }
 /* .footer-flex i{
     color: black;
     
@@ -148,6 +152,7 @@ text-align: center;
     line-height: 20px;
     text-align: center;
 }
+
 .copyright-design-logo-flex p {
   font-family:  Poppins-Regular;
   font-size: 16px;

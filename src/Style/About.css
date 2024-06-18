@@ -8,7 +8,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 100px 0 87px 0;
   gap: 45px;
 }
 .delicious {
@@ -117,9 +116,7 @@ font-family: Poppins-Regular;
   color: white;
   padding: 0 28px;
 }
-.Our-Values {
-  padding: 100px 0 50px 0;
-}
+
 .our-flex {
   display: flex;
   justify-content: space-between;
@@ -180,6 +177,7 @@ font-family: Poppins-Regular;
   justify-content: space-between;
   align-items: center;
   gap: 58px;
+  padding:50px 0
 }
 .innovation-head {
   /* Light 500 */
@@ -202,6 +200,7 @@ font-family: Poppins-Regular;
   justify-content: space-between;
   align-items: center;
   gap: 58px;
+  padding: 0 0 100px 0;
 }
 .community-img Image {
   max-width: 274px;
@@ -234,11 +233,9 @@ font-family: Poppins-Regular;
   width: 100%;
   text-align: justify;
 }
-.community-padding {
-  padding: 100px 0 50px 0;
-}
+
 .innovation-p {
-  font-family: Poppins;
+  font-family: Poppins-Bold;
 font-size: 18px;
 font-weight: 700;
 line-height: 30px;
@@ -272,9 +269,7 @@ color: black;
   .mission-right {
     height: 377px;
   }
-  .Our-Values {
-    padding: 50px 0 50px 0;
-  }
+  
 }
 
 @media screen and (max-width: 767px) {
@@ -289,7 +284,7 @@ color: black;
     min-width: 100px;
   }
   .p-contain {
-    font-family: Poppins;
+    font-family: Poppins-Regular;
 font-size: 16px;
 font-weight: 400;
 line-height: 20px;
@@ -310,7 +305,7 @@ text-align: center;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0px;
-    padding: 10px 0 0 0;
+    /* padding: 10px 0 0 0; */
   }
   .innovation-flex {
     flex-wrap: wrap;
@@ -323,18 +318,17 @@ text-align: center;
     min-width: 100px;
     height: 195.67px;
   }
-  .valuees-p {
+  /* .valuees-p {
     padding: 10.33px 0 0 0;
-  }
+  } */
   .Community-flex {
     gap: 0px;
-    padding: 10.33px 0 0 0;
+    
     flex-wrap: wrap;
     justify-content: center;
+    
   }
-  .community-padding {
-    padding: 50px 0 50px 0;
-  }
+  
   .comm-img {
     max-width: 200px;
     height: 195px;
@@ -343,7 +337,7 @@ text-align: center;
     padding: 10.38px 0 0 0;
   }
   .innovation-para{
-    font-family: Poppins;
+    font-family: Poppins-Regular;
 font-size: 16px;
 font-weight: 400;
 line-height: 20px;
@@ -352,7 +346,7 @@ color: black;
 
   }
   .honesty{
-    font-family: Poppins;
+    font-family: Poppins-Regular;
 font-size: 16px;
 font-weight: 400;
 line-height: 20px;
@@ -360,7 +354,7 @@ text-align: justified;
 
   }
   .our{
-    font-family: Poppins;
+    font-family: Poppins-Bold;
 font-size: 16px;
 font-weight: 700;
 line-height: 30px;
@@ -368,7 +362,7 @@ text-align: justified;
 
   }
   .innovation-p{
-    font-family: Poppins;
+    font-family: Poppins-Bold;
 font-size: 16px;
 font-weight: 700;
 line-height: 30px;
@@ -376,7 +370,7 @@ text-align: justified;
 
   }
   .believe{
-    font-family: Poppins;
+    font-family: Poppins-Bold;
 font-size: 16px;
 font-weight: 700;
 line-height: 30px;
