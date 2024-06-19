@@ -1,8 +1,6 @@
-.all-padding{
+.all-padding {
   padding: 0 20px;
 }
-
-
 
 .nature-flex {
   display: flex;
@@ -23,8 +21,8 @@
   height: auto;
 }
 .delicious-p {
- /* Regular 400 */
-font-family: Poppins-Regular;
+  /* Regular 400 */
+  font-family: Poppins-Regular;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
@@ -32,8 +30,8 @@ font-family: Poppins-Regular;
   color: black;
 }
 .frutzoo {
-   /* Light 700 */
- font-family: Poppins-Bold;
+  /* Light 700 */
+  font-family: Poppins-Bold;
   font-size: 18px;
   font-weight: 700;
   text-align: justify;
@@ -50,7 +48,7 @@ font-family: Poppins-Regular;
 }
 .mission-flex {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   gap: 50px;
   justify-items: center;
@@ -65,6 +63,10 @@ font-family: Poppins-Regular;
   border-top-left-radius: 150px;
   border-bottom-right-radius: 150px;
 }
+.natur-tpadding{
+  padding: 100px 0 0 0;
+}
+
 .mission-right {
   background-color: #2a5500;
   border-radius: 150px, 0px, 150px, 0px;
@@ -85,7 +87,8 @@ font-family: Poppins-Regular;
 
 .text-overlay {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
+  top: 41%;
 }
 .text-overlay h1 {
   color: black;
@@ -95,12 +98,12 @@ font-family: Poppins-Regular;
   margin: 40px 0 32.8px 0;
   position: relative;
 }
-.text-overlay h1 {
+.our-mission {
   font-size: 24px;
- /* Light 600 */
-font-family: Poppins-SemiBold;
+  /* Light 600 */
+  font-family: Poppins-SemiBold;
   font-weight: 600;
-  line-height: 30px;
+ 
 }
 .mission-left-p {
   max-width: 466px;
@@ -109,8 +112,8 @@ font-family: Poppins-SemiBold;
   margin: 0 auto;
 }
 .p-contain {
- /* Regular 400 */
-font-family: Poppins-Regular;
+  /* Regular 400 */
+  font-family: Poppins-Regular;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -139,11 +142,11 @@ font-family: Poppins-Regular;
 .our {
   /* Light 700 */
   font-family: Poppins-Bold;
-font-size: 18px;
-font-weight: 700;
-line-height: 30px;
-text-align: justified;
-color: black;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: justified;
+  color: black;
 }
 .transparency {
   /* Light 500 */
@@ -154,8 +157,8 @@ color: black;
   text-align: justified;
 }
 .honesty {
-/* Regular 400 */
-font-family: Poppins-Regular;
+  /* Regular 400 */
+  font-family: Poppins-Regular;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -179,7 +182,7 @@ font-family: Poppins-Regular;
   justify-content: space-between;
   align-items: center;
   gap: 58px;
-  padding:50px 0
+  padding: 50px 0;
 }
 .innovation-head {
   /* Light 500 */
@@ -212,17 +215,16 @@ font-family: Poppins-Regular;
 .believe {
   /* Light 700 */
   font-family: Poppins-Bold;
-font-size: 18px;
-font-weight: 700;
-line-height: 30px;
-text-align: justified;
-color: black;
-
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: justified;
+  color: black;
 }
 .power {
   /* Regular 400 */
-font-family: Poppins-Regular;
- 
+  font-family: Poppins-Regular;
+
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -238,12 +240,11 @@ font-family: Poppins-Regular;
 
 .innovation-p {
   font-family: Poppins-Bold;
-font-size: 18px;
-font-weight: 700;
-line-height: 30px;
-text-align: justified;
-color: black;
-
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: justified;
+  color: black;
 }
 
 @media screen and (max-width: 1024px) {
@@ -252,13 +253,16 @@ color: black;
     justify-content: center;
     gap: 0px;
   }
+  .natur-tpadding{
+    padding: 50px 0 0 0;
+  }
   .delicious {
     order: 2;
     width: 100%;
     max-width: 984px;
     min-width: 200px;
     height: auto;
-    padding: 10px 0 0 0 ;
+    padding: 10px 0 0 0;
   }
   .deliciouss {
     max-width: 984px;
@@ -272,13 +276,8 @@ color: black;
     height: 377px;
   }
   .mission-flex {
-   
-    grid-template-columns: repeat(1,1fr);
-    
-  
-   
+    grid-template-columns: repeat(1, 1fr);
   }
-  
 }
 
 @media screen and (max-width: 767px) {
@@ -287,6 +286,9 @@ color: black;
     min-width: 100px;
     width: 100%;
   }
+  .natur-tpadding{
+    padding: 50px 0 0 0;
+  }
   .mission-left {
     height: 463px;
     max-width: 260px;
@@ -294,11 +296,10 @@ color: black;
   }
   .p-contain {
     font-family: Poppins-Regular;
-font-size: 16px;
-font-weight: 400;
-line-height: 20px;
-text-align: center;
-
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
   }
   .mission-right {
     height: 496px;
@@ -332,12 +333,11 @@ text-align: center;
   } */
   .Community-flex {
     gap: 0px;
-    
+
     flex-wrap: wrap;
     justify-content: center;
-    
   }
-  
+
   .comm-img {
     max-width: 200px;
     height: 195px;
@@ -345,78 +345,70 @@ text-align: center;
   .community-contain {
     padding: 10.38px 0 0 0;
   }
-  .innovation-para{
+  .innovation-para {
     font-family: Poppins-Regular;
-font-size: 16px;
-font-weight: 400;
-line-height: 20px;
-text-align: justified;
-color: black;
-
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: justified;
+    color: black;
   }
-  .honesty{
+  .honesty {
     font-family: Poppins-Regular;
-font-size: 16px;
-font-weight: 400;
-line-height: 20px;
-text-align: justified;
-
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: justified;
   }
-  .our{
+  .our {
     font-family: Poppins-Bold;
-font-size: 16px;
-font-weight: 700;
-line-height: 30px;
-text-align: justified;
-
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: justified;
   }
-  .innovation-p{
+  .innovation-p {
     font-family: Poppins-Bold;
-font-size: 16px;
-font-weight: 700;
-line-height: 30px;
-text-align: justified;
-
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: justified;
   }
-  .believe{
+  .believe {
     font-family: Poppins-Bold;
-font-size: 16px;
-font-weight: 700;
-line-height: 30px;
-text-align: justified;
-color: black;
-
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: justified;
+    color: black;
   }
   .innovation-left {
-    
     order: 1;
   }
-  .power{
-  
-font-family: Poppins-Regular;
-font-size: 16px;
-font-weight: 400;
-line-height: 20px;
-text-align: justified;
-
+  .power {
+    font-family: Poppins-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: justified;
   }
-  .delicious-p{
-   /* Regular 400 */
-font-family: Poppins-Regular;
-font-size: 16px;
-font-weight: 400;
-line-height: 20px;
-text-align: justified;
-
+  .delicious-p {
+    /* Regular 400 */
+    font-family: Poppins-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: justified;
   }
-  
-  .frutzoo{
-   
- font-family: Poppins-Bold;
-font-size: 16px;
-font-weight: 700;
-line-height: 20px;
-text-align: justified;
 
+  .frutzoo {
+    font-family: Poppins-Bold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: justified;
+  }
+  .our-mission{
+    font-size: 18px;
   }
 }

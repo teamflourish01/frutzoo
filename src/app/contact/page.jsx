@@ -281,9 +281,24 @@ const page = () => {
                             </div>
 
                             <div className="icons">
-                              <Image src={fb} />
-                              <Image src={insta} />
-                              <Image src={whatapp} />
+                              <a
+                                href="https://www.facebook.com/people/Frutzoo/61559206483878/"
+                                target="_blank"
+                              >
+                                <Image src={fb} />
+                              </a>
+                              <a
+                                href="https://www.instagram.com/frutzoo.in/"
+                                target="_blank"
+                              >
+                                <Image src={insta} />
+                              </a>
+                              <a
+                                href="https://wa.me/918511024422"
+                                target="_blank"
+                              >
+                                <Image src={whatapp} />
+                              </a>
                             </div>
                           </div>
                         </div>
@@ -345,7 +360,7 @@ const page = () => {
                               ></textarea>
                             </div>
                             <div className="button-container">
-                              <div className="button-padding">
+                              <div className="button-paddings">
                                 <button
                                   className="contact-button"
                                   type="submit"
