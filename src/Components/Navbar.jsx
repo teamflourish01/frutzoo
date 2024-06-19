@@ -1,10 +1,9 @@
 "use client";
-
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import "../style/Navbar.css";
-import mainicon from "../images/mainicon.webp";
+import mainicon from "../images/mainicon.png";
 import navbarleaf from "../images/navbarleaf.png";
 import rightleaf from "../images/rightleaf.webp";
 

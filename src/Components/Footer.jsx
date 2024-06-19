@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import "../style/Footer.css";
-import mainicon from "../images/mainicon.webp";
+import mainicon from "../images/mainicon.png";
 import footericon1 from "../images/footericon1.webp";
 import footericon2 from "../images/footericon2.webp";
 import footericon3 from "../images/footericon3.webp";

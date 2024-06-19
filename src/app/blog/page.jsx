@@ -1,17 +1,10 @@
 import React from "react";
 import "../../Style/blog.css";
-
 import "../../Style/HomeSection.css";
 import Link from "next/link";
-
 import Image from "next/image";
 import blogcard from "../../images/blogcard.jpg";
-
-
-import "../../style/HomeSection.css";
-
-// import blogcard from "../../images/blogcard.jpg";
-import Arrow from "../../images/Arrow.png"
+import Arrow from "../../images/Arrow.png";
 import leftleaf from "../../images/leftleaf.webp";
 import bannerfullorange from "../../images/bannerfullorange.webp";
 import doubleshapeborderbanner from "../../images/doubleshapeborderbanner.png";
