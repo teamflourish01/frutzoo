@@ -541,9 +541,16 @@ const HomeSection = () => {
                                             <p>Smoothie</p>
                                         </div>
                                     </div>
-                                    <div className="view-menu-button">
-                                        <button>VIEW MENU</button>
-                                    </div>
+                                    <div className="button-container" style={{textAlign:"center"}}>
+                              <div className="button-padding" >
+                                <button
+                                  className="contact-button"
+                                  type="submit"
+                                >
+                                  VIEW MENU
+                                </button>
+                              </div>
+                            </div>
                                 </div>
                             </div>
                         </div>
