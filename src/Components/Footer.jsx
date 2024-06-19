@@ -48,7 +48,7 @@ const Footer = () => {
                       <p className="footer-bolds">ABOUT US</p>
                       </Link>
                       <hr className="hrnone" />
-                      <Link href="/Product" >
+                      <Link href="/fruitzoomenu.pdf"  target="_blank" >
                       <p className="footer-bolds">MENU</p>
                       </Link>
                       <hr className="hrnone" />

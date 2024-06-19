@@ -37,40 +37,18 @@ import tableticon3 from "../images/tableticon3.webp";
 import tableticon4 from "../images/tableticon4.webp";
 import tableticon5 from "../images/tableticon5.webp";
 import tableticon6 from "../images/tableticon6.webp";
+import groupico1 from "../images/groupico1.webp";
+import groupico2 from "../images/groupico2.webp";
+import groupico3 from "../images/groupico3.webp";
+import groupico4 from "../images/groupico4.webp";
+import groupico5 from "../images/groupico5.webp";
+import groupico6 from "../images/groupico6.webp";
+import groupico7 from "../images/groupico7.webp";
+import groupico8 from "../images/groupico8.webp";
+import groupico9 from "../images/groupico9.webp";
+import groupico10 from "../images/groupico10.webp";
 
-// const Marquee = ({
-//     texts,
-//     separator,
-//     behavior = "scroll",
-//     direction = "left",
-//     scrollamount = "6",
-// }) => {
-//     return (
-//         <marquee
-//             behavior={behavior}
-//             direction={direction}
-//             scrollamount={scrollamount}
-//             className="marquee"
-//         >
-//             {texts.map((text, index) => (
-//                 <span key={index} className={`marquee-item`}>
-//                     <span className={`marquee-text marquee-text-${index}`}>{text}</span>
-//                     {index < texts.length - 1 && (
-//                         <span style={{ margin: "0 55px" }}>
-//                             <Image
-//                                 src={bannerfullorange}
-//                                 alt="Separator"
-//                                 width={19}
-//                                 height={19}
-//                                 className="marquee-separator"
-//                             />
-//                         </span>
-//                     )}
-//                 </span>
-//             ))}
-//         </marquee>
-//     );
-// };
+
 const Testimonials = ({ testimonials }) => {
     const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
     const [isPaused, setIsPaused] = useState(false);
@@ -542,6 +520,7 @@ const HomeSection = () => {
                                         </div>
                                     </div>
                                     <div className="button-container" style={{textAlign:"center"}}>
+                                    <a href="/fruitzoomenu.pdf"  target="_blank">
                               <div className="button-padding" >
                                 <button
                                   className="contact-button"
@@ -550,6 +529,7 @@ const HomeSection = () => {
                                   VIEW MENU
                                 </button>
                               </div>
+                              </a>
                             </div>
                                 </div>
                             </div>
@@ -558,9 +538,34 @@ const HomeSection = () => {
                 </div>
             </section>
 
+            
+
             <section className="our-back " style={{ paddingTop: "100px" }}>
+            <div className="kya">
+            <div className="circlemaincontainer">
+            
+            <div class="outer-circle-container">
+            
+        <Image src={groupico3} alt="Image 1" class="circle-img rotatefruit" />
+        <Image src={groupico4} alt="Image 2" class="circle-img rotatefruit"/>
+        <Image src={groupico5} alt="Image 3" class="circle-img rotatefruit"/>
+        <Image src={groupico6} alt="Image 4" class="circle-img  zzooms"/>
+        <Image src={groupico7} alt="Image 5" class="circle-img rotatefruit"/>
+        <Image src={groupico1} alt="Image 6" class="circle-img rotatefruit"/>
+        <Image src={groupico2} alt="Image 7" class="inner-img zzooms"/>
+
+    </div>
+    <div class="inner-circle-container">
+        <Image src={groupico8} alt="Image 8" class="inner-img zzooms"/>
+        <Image src={groupico10} alt="Image 9" class="inner-img rotatefruit"/>
+        <Image src={groupico9} alt="Image 10" class="inner-img zzooms"/>
+    </div>
+    </div>
+            </div>
+
                 <div className="">
                     <div className="main-width">
+                        
                         <div>
                             <div className="under1320width">
                                 <div className="all-paddings">
@@ -673,6 +678,27 @@ const HomeSection = () => {
             </section>
 
             <section className="locationbackground" style={{ paddingTop: "100px" }}>
+            <div className="kya">
+            <div className="cirmaincontainer">
+            
+            <div class="outer-circle-container">
+            
+        <Image src={groupico3} alt="Image 1" class="circle-img rotatefruit" />
+        <Image src={groupico4} alt="Image 2" class="circle-img rotatefruit"/>
+        <Image src={groupico5} alt="Image 3" class="circle-img rotatefruit"/>
+        <Image src={groupico6} alt="Image 4" class="circle-img  zzooms"/>
+        <Image src={groupico7} alt="Image 5" class="circle-img rotatefruit"/>
+        <Image src={groupico1} alt="Image 6" class="circle-img rotatefruit"/>
+        <Image src={groupico2} alt="Image 7" class="inner-img zzooms"/>
+
+    </div>
+    <div class="inner-container">
+        <Image src={groupico8} alt="Image 8" class="inner-img zzooms"/>
+        <Image src={groupico10} alt="Image 9" class="inner-img rotatefruit"/>
+        <Image src={groupico9} alt="Image 10" class="inner-img zzooms"/>
+    </div>
+    </div>
+            </div>
                 <div >
                     <div className="locationbackground1">
                         <div className="main-width">
