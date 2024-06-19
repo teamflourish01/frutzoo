@@ -184,6 +184,7 @@ const page = () => {
             </div>
           </div>
         </div>
+        </div>
       </section>
 
       <section style={{ overflow: "hidden" ,paddingTop: "100px" }}>
