@@ -29,7 +29,6 @@ const Footer = () => {
                                   href="https://www.google.com/maps/place/SHOP+NO.+003,+SAMAN+COMPLEX,+MANSI+CROSS+ROAD,+SATELLITE,+AHMEDABAD+-+380015"
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                 
                                 >
                       <p>
                         SHOP NO. 003, SAMAN COMPLEX, MANSI CROSS ROAD,
