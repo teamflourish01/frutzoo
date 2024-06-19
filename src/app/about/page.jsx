@@ -3,7 +3,7 @@ import "../../style/HomeSection.css";
 import "../../Style/About.css";
 import Image from "next/image";
 import leftleaf from "../../images/leftleaf.webp";
-
+import aboutback from "../../images/aboutback.png"
 import aboutanimal from "../../images/aboutanimal.webp";
 import aboutsection from "../../images/aboutsection.png";
 import aboutbg from "../../images/aboutbg.png";
@@ -131,7 +131,7 @@ const page = () => {
                     </div>
                 </div>
             </section>
-      <section style={{ overflow: "hidden", paddingTop: "100px"  }}>
+      <section style={{ overflow: "hidden",  className:"toppadding" }}>
         <div className="wavebgbanner">
           <div className="main-width">
            
@@ -140,8 +140,8 @@ const page = () => {
 
                 <div className="all-paddings">
 
-                <div className="all-padding">
-
+              
+<div className="natur-tpadding">
                   <div className="nature-flex">
                     <div className="delicious">
                       <p className="delicious-p">
@@ -178,10 +178,10 @@ const page = () => {
                       <Image className="deliciouss" src={aboutanimal} />
                     </div>
                   </div>
-
+</div>
                   <div></div>
                 </div>
-              </div>
+            
             </div>
           </div>
         </div>
@@ -198,9 +198,9 @@ const page = () => {
                     <div className="mission-flex">
                       <div className="mission-left">
                         <div className="mission">
-                          <Image  className="mission-bg" src={aboutbg}></Image>
+                          <Image  className="mission-bg" src={aboutback}></Image>
                           <div className="text-overlay">
-                            <h1>Our Mission</h1>
+                            <h1 className="our-mission">Our Mission</h1>
                           </div>
                         </div>
                         <div className="mission-left-p">
@@ -216,9 +216,9 @@ const page = () => {
                       </div>
                       <div className="mission-right">
                         <div className="mission">
-                          <Image src={aboutbg} className="mission-bg"></Image>
+                          <Image src={aboutback} className="mission-bg"></Image>
                           <div className="text-overlay">
-                            <h1>Our Vision</h1>
+                            <h1 className="our-mission">Our Vision</h1>
                           </div>
                         </div>
                         <div className="mission-left-p">

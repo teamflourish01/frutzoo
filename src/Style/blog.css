@@ -96,6 +96,9 @@ color: #2A5500;
     justify-items: center;
 
 }
+.blog-main{
+    padding: 50px 0 50px 0;
+}
 
 }
 
@@ -107,5 +110,8 @@ color: #2A5500;
     gap: 20px;
     justify-items: center;
 
+}
+.blog-main{
+    padding: 50px 0 50px 0;
 }
 }

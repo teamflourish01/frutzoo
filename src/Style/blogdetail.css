@@ -1,10 +1,10 @@
-.detail-h1 {
+.details-h1 {
   color: black;
   font-family: Poppins-SemiBold;
   font-size: 24px;
   font-weight: 600;
   line-height: 28.13px;
-  text-align: left;
+  /* text-align: left; */
   padding: 170px 0 30px 0;
 }
 
@@ -49,18 +49,28 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 27px;
-  text-align: justified;
+  text-align: justify;
+}
+.freshly-para{
+  padding: 10px 0 100px 0;
+  font-family: Poppins-Regular;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: justify;
+    color: black;
+    padding: 10px 0;
 }
 
 @media screen and (max-width: 767px) {
-  .detail-h1 {
+  .details-h1 {
     font-family: Poppins-SemiBold;
     font-size: 18px;
     font-weight: 600;
     line-height: 20px;
     letter-spacing: -0.02em;
     text-align: justify;
-    padding: 50px 0 30px 0;
+    padding: 110px 0 30px 0;
   }
   .healthy {
     font-size: 16px;
@@ -71,18 +81,25 @@
     line-height: 20px;
   }
   .freshly-p {
-    font-family: Poppins;
+ 
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
     text-align: justified;
   }
   .lemons{
-    font-family: Poppins;
+    
 font-size: 16px;
 font-weight: 600;
 line-height: 20px;
 text-align: justified;
 
   }
+  .freshly-para{
+    padding: 10px 0 50px 0;
+    font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+  }
+  
 }
