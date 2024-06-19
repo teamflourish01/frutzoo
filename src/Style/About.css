@@ -49,9 +49,11 @@ font-family: Poppins-Regular;
   margin: 0 auto;
 }
 .mission-flex {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
   justify-content: space-between;
   gap: 50px;
+  justify-items: center;
 }
 .mission-left {
   background-color: #2a5500;
@@ -268,6 +270,13 @@ color: black;
   }
   .mission-right {
     height: 377px;
+  }
+  .mission-flex {
+   
+    grid-template-columns: repeat(1,1fr);
+    
+  
+   
   }
   
 }

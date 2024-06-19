@@ -1,5 +1,6 @@
 import React from "react";
 import "../../Style/blogdetail.css";
+import "../../Style/HomeSection.css";
 import Link from "next/link";
 
 import "../../Style/blog.css";

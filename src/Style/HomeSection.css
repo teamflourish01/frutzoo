@@ -127,8 +127,48 @@ text-align: left;
   align-items: center;
 }
 
+.item{
+  color: white;
+}
+.contact-button {
+  background-color: #ffa626;
+  max-width: 189px;
+  min-width: 100px;
+  width: 100%;
+  color: white;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+  font-family: Poppins-Bold;
+  font-size: 18px;
+  height: 45px;
+  font-weight: 700;
+  line-height: 30px;
+  position: relative; /* Add this */
+  overflow: hidden; /* Add this */
+  z-index: 0; /* Add this */
+}
 
+.contact-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: #2A5500;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+.button-padding{
+  padding: 41px 0 0 0;
+}
 
+.contact-button:hover::before {
+  right: 0;
+  opacity: 1;
+}
 .fruitzoom1, .fruitzoom {
   position: absolute;
   left: 50%;
@@ -274,7 +314,7 @@ line-height: 60px;
 .mb-2 {
   margin-bottom: 0.5rem;
   width: 90px;
-  animation: upAndDown 2s infinite;
+  animation: upAndDown 8s infinite;
 }
 
 
@@ -996,7 +1036,7 @@ text-align: center;
     flex: 1 0 var(--width);
     text-align: center;
     /* padding: 1rem; */
-    /* color: black; */
+    color: white;
     font-family: Poppins-SemiBold;
     font-size: 25px;
     font-weight: 600;
