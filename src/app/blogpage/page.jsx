@@ -20,8 +20,8 @@ const page = () => {
                 <div className="under1320width">
                   <div className="all-paddings">
                     <div className="detail-container">
-                      <h1 className="detail-h1">
-                        The Health Benefits of Freshly Squeezed Fruit Juices
+                      <h1 className="details-h1">
+                      The Health Benefits of Freshly Squeezed Fruit Juices
                       </h1>
                       <div className="detail-img">
                         <Image src={blogcard} className="detail-im" />
@@ -167,7 +167,7 @@ const page = () => {
                             of wrinkles.
                           </p>
                           <h1 className="Nutrient">Conclusion</h1>
-                          <p className="freshly-p">
+                          <p className="freshly-para">
                             Incorporating freshly squeezed fruit juices into
                             your daily routine is a simple yet powerful way to
                             enhance your health. These nutrient-rich beverages

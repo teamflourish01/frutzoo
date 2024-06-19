@@ -5,6 +5,7 @@
 
 .mainicon-footer{
     text-align: center;
+    padding: 100px 0 0 0;
 }
 .location-time-phone{
     max-width: 780px;
@@ -121,6 +122,9 @@ text-align: center;
     .box3 {
       order: 3;
     }
+    .mainicon-footer{
+      padding: 50px 0 0 0;
+    }
 
    }
 
@@ -166,5 +170,8 @@ text-align: center;
 }
 .box3{
   padding:20px 0 0 0
+}
+.mainicon-footer{
+  padding: 50px 0 0 0;
 }
    }
