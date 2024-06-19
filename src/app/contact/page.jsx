@@ -362,7 +362,7 @@ const page = () => {
                             <div className="button-container">
                               <div className="button-paddings">
                                 <button
-                                  className="contact-button"
+                                  className="contacts-button"
                                   type="submit"
                                 >
                                   SUBMIT

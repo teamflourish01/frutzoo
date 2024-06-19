@@ -393,15 +393,6 @@ section {
 
 
 
-
-/* .our-back {
-  background-image: url(../images/locationbackground.webp);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-position-x: left;
-
-} */
-
 .our-offering {
   padding-bottom: 50px;
 }
@@ -1263,4 +1254,5 @@ section {
     height: unset;
     /* border: 1px solid black; */
   }
+}
 }
