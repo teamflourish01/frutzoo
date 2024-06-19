@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import React,{useState} from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import "../../Style/contact.css";
 import "../../Style/HomeSection.css";
@@ -24,11 +24,10 @@ import contactfruitbanner from "../../images/contactfruitbanner.png";
 import bannerhalforange from "../../images/bannerhalforange.webp";
 import underheading from "../../images/underheading.webp";
 
-
 const page = () => {
   const [formdata, setformdata] = useState({
     name: "",
-    phone: "",
+    Phone: "",
     email: "",
     subject: "",
     message: "",
@@ -36,41 +35,36 @@ const page = () => {
 
   const validateForm = () => {
     const { name, Phone, email, subject, message } = formdata;
-    if (!name || !phone || !email || !subject || !message) {
+    if (!name || !Phone || !email || !subject || !message) {
       // toast.error("Please fill out all fields.");
-      alert("invalid fields")
+      alert("invalid fields");
       return false;
-
     }
     return true;
   };
 
   const submitForm = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     // if (validateForm()) {
-      
-      axios
-        .post("http://localhost:8000/mail", formdata)
-        .then((response) => {
-          console.log(response.data);
-          setformdata({
-            name: "",
-            phone: "",
-            email: "",
-            subject: "",
-            message: "",
-          });
 
-
-
-          
-
-          toast.success("Form submitted successfully!");
-        })
-        .catch((error) => {
-          console.error("There was an error submitting the form!", error);
-          toast.error("Failed to submit the form. Please try again.");
+    axios
+      .post("http://localhost:8000/mail", formdata)
+      .then((response) => {
+        console.log(response.data);
+        setformdata({
+          name: "",
+          Phone: "",
+          email: "",
+          subject: "",
+          message: "",
         });
+
+        toast.success("Form submitted successfully!");
+      })
+      .catch((error) => {
+        console.error("There was an error submitting the form!", error);
+        toast.error("Failed to submit the form. Please try again.");
+      });
     // }
   };
 
@@ -83,115 +77,145 @@ const page = () => {
   };
   return (
     <>
-    <section style={{ overflow: "hidden" }}>
-                <div className="wavebgbanner">
-                    <div className="main-width">
-                        <div style={{ marginTop: "170px" }}>
-                            <div className="leftleaf-container" style={{ position: "absolute", left:"-5px" }}>
-                                <Image src={leftleaf} />
-                            </div>
-                            <div className="under1320width">
-                                <div className="all-paddings">
-                                    <div>
-                                        <div className="frutzoo-flex">
-                                            <div className="every-sip">
-                                                <div className="orange-dot">
-                                                    <div className="orange-dot-flex">
-                                                        <Image
-                                                            className="rotate-img"
-                                                            src={bannerfullorange}
-                                                            alt="Logo"
-                                                            width={126}
-                                                            height={126}
-                                                        />
-                                                        <Image
-                                                            className=""
-                                                            src={doubledot}
-                                                            alt="Logo"
-                                                            width={26}
-                                                            height={26}
-                                                        />
-                                                    </div>
-                                                </div>
-                                                <div className="banner-heading">
-                                                    <p>Contact Us</p>
-                                                </div>
-                                            </div>
-                                            <div className="big-bg">
-                                                <div className="small-bg">
-
-                                                    <Image
-                                                        className="fruitzoom1"
-                                                        src={doubleshapeborderbanner}
-                                                        alt="Doubleshape Border Banner"
-                                                    />
-                                                    <Image
-                                                       style={{height:"auto"}}
-                                                        className="fruitzoom"
-                                                        src={contactfruitbanner}
-                                                        alt="Banner Fruit Zoom"
-                                                    />
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="cut-orange-and-dot">
-                                            <Image src={bannerhalforange} width={127} />
-                                            <Image
-                                                className=""
-                                                src={doubledot}
-                                                alt="Logo"
-                                                width={26}
-                                                height={26}
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+      <section style={{ overflow: "hidden" }}>
+        <div className="wavebgbanner">
+          <div className="main-width">
+            <div style={{ marginTop: "170px" }}>
+              <div
+                className="leftleaf-container"
+                style={{ position: "absolute", left: "-5px" }}
+              >
+                <Image src={leftleaf} />
+              </div>
+              <div className="under1320width">
+                <div className="all-paddings">
+                  <div>
+                    <div className="frutzoo-flex">
+                      <div className="every-sip">
+                        <div className="orange-dot">
+                          <div className="orange-dot-flex">
+                            <Image
+                              className="rotate-img"
+                              src={bannerfullorange}
+                              alt="Logo"
+                              width={126}
+                              height={126}
+                            />
+                            <Image
+                              className=""
+                              src={doubledot}
+                              alt="Logo"
+                              width={26}
+                              height={26}
+                            />
+                          </div>
                         </div>
-                    </div>
-
-
-                    <div class="carousel-wrapper">
-                        <div class="carousel">
-                            <div class="item">Be Healthier</div>
-                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
-                            <div class="item stroke">Be Healthier</div>
-                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
-                            <div class="item">Be Healthier</div>
-                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
-                            <div class="item stroke">Be Healthier</div>
-                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
-                            <div class="item">Be Healthier</div>
-                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
-                            <div class="item stroke">Be Healthier</div>
-                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
-                            <div class="item">Be Healthier</div>
-                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
-                            <div class="item stroke">Be Healthier</div>
-                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
-                            <div class="item">Be Healthier</div>
-                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
-                            <div class="item stroke">Be Healthier</div>
-                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
-                            <div class="item">Be Healthier</div>
-                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
-                            <div class="item stroke">Be Healthier</div>
-                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
-                            <div class="item">Be Healthier</div>
-                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
-                            <div class="item stroke">Be Healthier</div>
-                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
-                            <div class="item">Be Healthier</div>
-                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
-                            <div class="item stroke">Be Healthier</div>
-                            <div class="item"><Image className="item-image" src={bannerfullorange} /></div>
-
-
+                        <div className="banner-heading">
+                          <p>Contact Us</p>
                         </div>
+                      </div>
+                      <div className="big-bg">
+                        <div className="small-bg">
+                          <Image
+                            className="fruitzoom1"
+                            src={doubleshapeborderbanner}
+                            alt="Doubleshape Border Banner"
+                          />
+                          <Image
+                            style={{ height: "auto" }}
+                            className="fruitzoom"
+                            src={contactfruitbanner}
+                            alt="Banner Fruit Zoom"
+                          />
+                        </div>
+                      </div>
                     </div>
+                    <div className="cut-orange-and-dot">
+                      <Image src={bannerhalforange} width={127} />
+                      <Image
+                        className=""
+                        src={doubledot}
+                        alt="Logo"
+                        width={26}
+                        height={26}
+                      />
+                    </div>
+                  </div>
                 </div>
-            </section>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-wrapper">
+            <div class="carousel">
+              <div class="item">Be Healthier</div>
+              <div class="item">
+                <Image className="item-image" src={bannerfullorange} />
+              </div>
+              <div class="item stroke">Be Healthier</div>
+              <div class="item">
+                <Image className="item-image" src={bannerfullorange} />
+              </div>
+              <div class="item">Be Healthier</div>
+              <div class="item">
+                <Image className="item-image" src={bannerfullorange} />
+              </div>
+              <div class="item stroke">Be Healthier</div>
+              <div class="item">
+                <Image className="item-image" src={bannerfullorange} />
+              </div>
+              <div class="item">Be Healthier</div>
+              <div class="item">
+                <Image className="item-image" src={bannerfullorange} />
+              </div>
+              <div class="item stroke">Be Healthier</div>
+              <div class="item">
+                <Image className="item-image" src={bannerfullorange} />
+              </div>
+              <div class="item">Be Healthier</div>
+              <div class="item">
+                <Image className="item-image" src={bannerfullorange} />
+              </div>
+              <div class="item stroke">Be Healthier</div>
+              <div class="item">
+                <Image className="item-image" src={bannerfullorange} />
+              </div>
+              <div class="item">Be Healthier</div>
+              <div class="item">
+                <Image className="item-image" src={bannerfullorange} />
+              </div>
+              <div class="item stroke">Be Healthier</div>
+              <div class="item">
+                <Image className="item-image" src={bannerfullorange} />
+              </div>
+              <div class="item">Be Healthier</div>
+              <div class="item">
+                <Image className="item-image" src={bannerfullorange} />
+              </div>
+              <div class="item stroke">Be Healthier</div>
+              <div class="item">
+                <Image className="item-image" src={bannerfullorange} />
+              </div>
+              <div class="item">Be Healthier</div>
+              <div class="item">
+                <Image className="item-image" src={bannerfullorange} />
+              </div>
+              <div class="item stroke">Be Healthier</div>
+              <div class="item">
+                <Image className="item-image" src={bannerfullorange} />
+              </div>
+              <div class="item">Be Healthier</div>
+              <div class="item">
+                <Image className="item-image" src={bannerfullorange} />
+              </div>
+              <div class="item stroke">Be Healthier</div>
+              <div class="item">
+                <Image className="item-image" src={bannerfullorange} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section style={{ overflow: "hidden", paddingTop: "100px" }}>
         <div className="wavebgbanner">
           <div className="main-width">
@@ -208,9 +232,9 @@ const page = () => {
                                 Contact Information
                               </p>
                               <p className="contact-info-para">
-                                Bring the table winwin survival strateges ensure
-                                proactive domination the end of the day going
-                                real times multiple touchpoints.
+                                Have a fruity question or need a juicy tip?
+                                Reach out, and we’ll respond quicker than you
+                                can say “Always Healthier”
                               </p>
                             </div>
 
@@ -221,7 +245,9 @@ const page = () => {
                                   width={16}
                                   className="contact-icon"
                                 />
-                                <p className="color">+91 85110 24422</p>
+                                <a href="tel:+918511024422" className="color">
+                                  +91 85110 24422
+                                </a>
                               </div>
                               <div className="contact-mail">
                                 <Image
@@ -229,7 +255,12 @@ const page = () => {
                                   width={16}
                                   className="contact-icon"
                                 />
-                                <p className="color">evanmattew@mail.com</p>
+                                <a
+                                  href="mailto:connect.frutzoo@gmail.com"
+                                  className="color"
+                                >
+                                  connect.frutzoo@gmail.com
+                                </a>
                               </div>
                               <div className="contact-location">
                                 <Image
@@ -237,10 +268,15 @@ const page = () => {
                                   width={16}
                                   className="contact-icon"
                                 />
-                                <p className="color">
+                                <a
+                                  href="https://www.google.com/maps/place/SHOP+NO.+003,+SAMAN+COMPLEX,+MANSI+CROSS+ROAD,+SATELLITE,+AHMEDABAD+-+380015"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="color"
+                                >
                                   SHOP NO. 003, SAMAN COMPLEX, MANSI CROSS ROAD,
                                   SATELLITE, AHMEDABAD - 380015
-                                </p>
+                                </a>
                               </div>
                             </div>
 
@@ -252,70 +288,73 @@ const page = () => {
                           </div>
                         </div>
                         <div className="contact-right">
-                        <form onSubmit={submitForm}>
-
-                          <div className="input-row">
-                            <input
-                              type="text"
-                              className="input-box"
-                              placeholder="Name"
-                              name="name"
-                              value={formdata.name}
-                              onChange={handleChange}
-                              required
-                            />
-                            <input
-                              type="text"
-                              className="input-box"
-                              placeholder="Email"
-                              name="email"
-                              value={formdata.email}
-                              onChange={handleChange}
-                              required
-                            />
-                          </div>
-
-                          <div
-                            style={{ margin: "24px 0" }}
-                            className="input-row"
-                          >
-                            <input
-                              type="text"
-                              className="input-box"
-                              placeholder="Subject"
-                              name="subject"
-                              value={formdata.subject}
-                              onChange={handleChange}
-                              required
-                            />
-                            <input
-                              type="text"
-                              className="input-box"
-                              placeholder="Phone"
-                              name="phone"
-                              value={formdata.Phone}
-                              onChange={handleChange}
-                              required
-                            />
-                          </div>
-                          <div className="text-area">
-                            <textarea
-                              name="message"
-                              id=""
-                              className="textarea"
-                              placeholder="Message"
-                          
-                              value={formdata.message}
-                              onChange={handleChange}
-                              required
-                            ></textarea>
-                          </div>
-                          <div className="button-container">
-                            <div className="button-padding">
-                              <button className="contact-button" type="submit" >SUBMIT</button>
+                          <form onSubmit={submitForm}>
+                            <div className="input-row">
+                              <input
+                                type="text"
+                                className="input-box"
+                                placeholder="Name"
+                                name="name"
+                                value={formdata.name}
+                                onChange={handleChange}
+                                required
+                              />
+                              <input
+                                type="text"
+                                className="input-box"
+                                placeholder="Email"
+                                name="email"
+                                value={formdata.email}
+                                onChange={handleChange}
+                                required
+                              />
                             </div>
-                          </div>
-                        </form>
+
+                            <div
+                              style={{ margin: "24px 0" }}
+                              className="input-row"
+                            >
+                              <input
+                                type="text"
+                                className="input-box"
+                                placeholder="Subject"
+                                name="subject"
+                                value={formdata.subject}
+                                onChange={handleChange}
+                                required
+                              />
+                              <input
+                                type="text"
+                                className="input-box"
+                                placeholder="Phone"
+                                name="phone"
+                                value={formdata.Phone}
+                                onChange={handleChange}
+                                required
+                              />
+                            </div>
+                            <div className="text-area">
+                              <textarea
+                                name="message"
+                                id=""
+                                className="textarea"
+                                placeholder="Message"
+                                value={formdata.message}
+                                onChange={handleChange}
+                                required
+                              ></textarea>
+                            </div>
+                            <div className="button-container">
+                              <div className="button-padding">
+                                <button
+                                  className="contact-button"
+                                  type="submit"
+                                >
+                                  SUBMIT
+                                </button>
+                              </div>
+                            </div>
+                          </form>
                         </div>
                       </div>
                     </div>
