@@ -416,7 +416,7 @@ section {
     background-position: top;
     background-position-x: left; */
 
-
+}
 .our-back {
   background-image: url(../images/locationbackground.webp);
   background-repeat: no-repeat;
@@ -1365,4 +1365,5 @@ section {
     height: unset;
     /* border: 1px solid black; */
   }
+}
 }
